@@ -1,0 +1,14 @@
+C:\Users\Amalieri\source\repos\nhentai-dl-gui\bin\Debug\nhentai-dl-gui.exe.config
+C:\Users\Amalieri\source\repos\nhentai-dl-gui\bin\Debug\nhentai-dl-gui.exe
+C:\Users\Amalieri\source\repos\nhentai-dl-gui\bin\Debug\nhentai-dl-gui.pdb
+C:\Users\Amalieri\source\repos\nhentai-dl-gui\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Amalieri\source\repos\nhentai-dl-gui\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Amalieri\source\repos\nhentai-dl-gui\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Amalieri\source\repos\nhentai-dl-gui\obj\Debug\nhentai-dl-gui.csprojAssemblyReference.cache
+C:\Users\Amalieri\source\repos\nhentai-dl-gui\obj\Debug\nhentai_dl_gui.Form1.resources
+C:\Users\Amalieri\source\repos\nhentai-dl-gui\obj\Debug\nhentai_dl_gui.Properties.Resources.resources
+C:\Users\Amalieri\source\repos\nhentai-dl-gui\obj\Debug\nhentai-dl-gui.csproj.GenerateResource.cache
+C:\Users\Amalieri\source\repos\nhentai-dl-gui\obj\Debug\nhentai-dl-gui.csproj.CoreCompileInputs.cache
+C:\Users\Amalieri\source\repos\nhentai-dl-gui\obj\Debug\nhentai-dl-gui.csproj.CopyComplete
+C:\Users\Amalieri\source\repos\nhentai-dl-gui\obj\Debug\nhentai-dl-gui.exe
+C:\Users\Amalieri\source\repos\nhentai-dl-gui\obj\Debug\nhentai-dl-gui.pdb
