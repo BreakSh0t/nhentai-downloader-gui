@@ -39,6 +39,9 @@ namespace nhentai_dl_gui
             MessageBox.Show("The program might stop responding while it is downloading, don't worry!");
             for (int i = 1; i < pages + 1; i++)
             {
+                progressBar1.Value = i * progressBar1.Maximum / pages;
+                Application.DoEvents();
+                label2.Text = "Progress: " + i + " of " + pages + " downloaded";
                 using (var client = new WebClient())
                 {
                     client.DownloadFile(urlToDownloadFrom + i.ToString() + ".jpg", @"" + pathToSave + i.ToString() + ".jpg");
@@ -101,6 +104,11 @@ namespace nhentai_dl_gui
             {
                 downloadHentai(test);
             }
+        }
+
+        private void ProgressBar1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
