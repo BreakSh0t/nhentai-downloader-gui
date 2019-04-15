@@ -35,7 +35,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.hentaiIdBox = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -112,13 +111,6 @@
             this.textBox1.Size = new System.Drawing.Size(143, 16);
             this.textBox1.TabIndex = 0;
             // 
-            // progressBar2
-            // 
-            this.progressBar2.Location = new System.Drawing.Point(58, 11);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(8, 8);
-            this.progressBar2.TabIndex = 2;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -133,7 +125,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(264, 224);
-            this.Controls.Add(this.progressBar2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "nhentai downloader";
@@ -153,7 +144,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.ProgressBar progressBar2;
         private System.Windows.Forms.Label label2;
     }
 }
