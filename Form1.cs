@@ -110,5 +110,12 @@ namespace nhentai_dl_gui
         {
 
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            int id = rnd.Next(1, 100000);
+            textBox1.Text = id.ToString();
+        }
     }
 }
