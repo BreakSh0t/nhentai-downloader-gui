@@ -28,7 +28,9 @@ namespace nhentai_dl_gui
         }
         public void downloadHentai(string hentaiID)
         {
-            string mediaID = getMediaId(hentaiID);
+            string[] stuff = getMediaId(hentaiID);
+            string mediaID = stuff[0];
+            string ext = stuff[1];
             int pages = Int32.Parse(getPages(hentaiID));
             string urlToDownloadFrom = "https://i.nhentai.net" + "/galleries/" + mediaID + "/";
             string pathToSave = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\" + hentaiID + "\\";
@@ -44,7 +46,7 @@ namespace nhentai_dl_gui
                 label2.Text = "Progress: " + i + " of " + pages + " downloaded";
                 using (var client = new WebClient())
                 {
-                    client.DownloadFile(urlToDownloadFrom + i.ToString() + ".jpg", @"" + pathToSave + i.ToString() + ".jpg");
+                    client.DownloadFile(urlToDownloadFrom + i.ToString() + "." + ext, @"" + pathToSave + i.ToString() + "." + ext);
                 }
             }
             MessageBox.Show("Your hentai has been saved to: " + pathToSave);
@@ -54,7 +56,7 @@ namespace nhentai_dl_gui
             
         }
 
-        public string getMediaId(string hentaiId)
+        public string[] getMediaId(string hentaiId)
         {
             string mediaID = "";
             HtmlAgilityPack.HtmlDocument doc = web.Load("https://nhentai.net/g/" + hentaiId + "/1");
@@ -71,7 +73,12 @@ namespace nhentai_dl_gui
                 }
             }
             string[] parts = mediaID.Split('/');
-            string realMediaID = parts[4];
+            string[] ext = mediaID.Split('.');
+
+
+            MessageBox.Show(ext[3]);
+
+            string[] realMediaID = { parts[4], ext[3] };
             return realMediaID;
         }
         private void Form1_Load(object sender, EventArgs e)
